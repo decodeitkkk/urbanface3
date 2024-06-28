@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/output.css" />
+        <link rel="stylesheet" href="/src/global.css">
+        <title>Portfolio</title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/src/media/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/src/media/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/src/media/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body
+        style="background-color: #1f1f1f; color: white"
+        class="h-screen w-full"
+    >
+        <section id="portfolio"></section>
+        <section id="whatsapp-floating-icon"></section>
+
+        <script src="/src/Components/Header.js"></script>
+        <script src="/src/Components/Footer.js"></script>
+        <script src="/src/Components/portfolio.js"></script>
+        <script src="/src/Components/whatsappFloatingIcon.js"></script>
+        <script src="/src/global.js"></script>
+        <script>
+            let tagline =
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit.";
+            let subhead = `<button
+                            class="uppercase font-WorkSans200 text-lg font-medium px-8 py-2 my-4 sm:mx-2 w-full underline underline-offset-8"
+                        >
+                            <a href="/src/pages/architectural.html"> architectural design</a>
+                        </button>
+                        <button
+                            class="uppercase font-WorkSans200 text-lg font-medium px-8 py-2 my-4 sm:mx-2 w-full underline underline-offset-8"
+                        >
+                            <a href="/src/pages/residential.html"> residential INTERIOR</a>
+                        </button>
+                        <button
+                            class="uppercase font-WorkSans200 text-lg font-medium px-8 py-2 my-4 sm:mx-2 w-full underline underline-offset-8"
+                        >
+                            <a href="/src/pages/commercial.html"> commercial interior</a>
+                        </button>`;
+            let data = [
+                {
+                    img: "/src/media/images/portfolio_062.jpg",
+                    img2: "/src/media/images/comm_1.jpg",
+                    desc: "UrbanFace curates secluded hillside retreats, blending rustic charm with contemporary comfort for serene escapes.",
+                },
+                {
+                    img: "/src/media/images/portfolio_082.jpg",
+                    img2: "/src/media/images/comm_2.jpg",
+                    desc: "UrbanFace transforms compact urban spaces, infusing charm and efficiency for vibrant street-side commerce",
+                },
+                {
+                    img: "/src/media/images/portfolio_062.jpg",
+                    img2: "/src/media/images/comm_3.jpg",
+                    desc: "UrbanFace designs inspiring corporate environments, fostering productivity and collaboration with sophisticated elegance.",
+                },
+                {
+                    img: "/src/media/images/portfolio_082.jpg",
+                    img2: "/src/media/images/comm_4.jpg",
+                    desc: "UrbanFace crafts prestigious corporate settings, marrying functionality with refined aesthetics for executive excellence.",
+                },
+
+                {
+                    img: "/src/media/images/portfolio_062.jpg",
+                    img2: "/src/media/images/house_2.jpg",
+                    desc: " UrbanFace designs luxurious homes with stunning poolscapes, offering lavish relaxation in unrivaled style.",
+                },
+                {
+                    img: "/src/media/images/portfolio_082.jpg",
+                    img2: "/src/media/images/why.jpg",
+                    desc: "UrbanFace creates idyllic residences with lush lawns and majestic trees, blending nature seamlessly with modern comfort.",
+                },
+                {
+                    img: "/src/media/images/portfolio_062.jpg",
+                    img2: "/src/media/images/house_3.jpg",
+                    desc: "UrbanFace crafts culinary sanctuaries, merging elegance with functionality for gourmet cooking and sophisticated dining experiences.",
+                },
+                {
+                    img: "/src/media/images/portfolio_082.jpg",
+                    img2: "/src/media/images/house_1.jpg",
+                    desc: "UrbanFace delivers homes with spacious garages, combining practicality and style for effortless urban living.",
+                },
+                {
+                    img: "/src/media/images/portfolio_062.jpg",
+                    img2: "/src/media/images/arch_1.jpg",
+                    desc: "UrbanFace transforms retail spaces into captivating destinations, infusing style and innovation for unparalleled shopping experiences",
+                },
+                {
+                    img: "/src/media/images/portfolio_082.jpg",
+                    img2: "/src/media/images/arch_2.jpg",
+                    desc: "UrbanFace designs upscale wine boutiques, marrying opulence with functionality for refined oenophilic experiences.",
+                },
+                {
+                    img: "/src/media/images/portfolio_062.jpg",
+                    img2: "/src/media/images/arch_3.jpg",
+                    desc: "UrbanFace creates romantic retreats amidst nature, offering secluded luxury for unforgettable getaways.",
+                },
+                {
+                    img: "/src/media/images/portfolio_082.jpg",
+                    img2: "/src/media/images/arch_4.jpg",
+                    desc: "UrbanFace crafts elegant bars for luxurious socializing, blending sophistication with impeccable design finesse.",
+                },
+            ];
+            document
+                .getElementById("portfolio")
+                .insertAdjacentHTML(
+                    "afterbegin",
+                    Portfolio("Portfolio", subhead, tagline, data)
+                );
+        </script>
+    </body>
+</html>

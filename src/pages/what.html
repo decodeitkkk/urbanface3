@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/global.css" />
+    <title>What we do</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/media/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/media/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/media/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #1f1f1f; color: white" class="h-screen w-full">
+    <section id="portfolio">
+        <section id="pfHead">
+            <div class="h-auto relative sm:block">
+                <!-- <div id="bgImg"
+                    class="bg-[url('/src/media/images/about_01.jpg')] h-full w-full bg-center bg-cover flex flex-row items-end"> -->
+                <img class="w-full max-h-screen object-cover " src="/src/media/ig/livingroom&sofa/living-sofa-30.jpg"
+                    alt="">
+                <div
+                    class=" absolute bottom-0 text-xl sm:text-5xl sm:px-14 sm:leading-8 leading-7 text-white font-WorkSans400 mt-0 align-text-bottom bg-gradient-to-t from-black /20 w-full py-2 sm:py-6">
+                    <div
+                        class="text-center capitalize  sm:px-14 font-LibreBaskervilleRegular text-2xl sm:text-3xl md:text-4xl lg:text-4xl">
+                        what we do ?
+                    </div>
+
+                    <div
+                        class=" hidden md:block px-5 py-6 sm:flex sm:flex-row sm:gap-x-2 sm:justify-between  sm:text-2xl lg:text-3xl font-SourceSans3Regular  text-center ">
+                        UrbanFace crafts bespoke homes and hospitality
+                        spaces with cutting-edge technology and meticulous
+                        attention to detail
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- text -->
+        <section class="relative overflow-hidden h-screen">
+            <div class="absolute inset-0 z-0 gif-container">
+                <img class="w-full h-full object-cover grayscale" src="/src/media/images/gif-3.gif"
+                    alt="background-image">
+            </div>
+            <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+            <div class="relative z-20 px-5 md:px-7 lg:px-11 py-20 text-base sm:text-3xl text-white">
+                <p class="my-4 font-LibreBaskervilleRegular text-2xl sm:text-3xl md:text-4xl lg:text-4xl">
+                    Bespoke Luxury from Around the World
+                </p>
+                <ul id="animated-list-2"
+                    class="list-disc px-6 text-base md:text-lg lg:text-xl font-SourceSans3Regular space-y-5 my-5 text-gray-300">
+                    <li>We source luxurious furniture, décor, sculptures, and essentials from around the world.</li>
+                    <li>We provide tailored customization for all items to meet unique client specifications.</li>
+                    <li>We manage logistics to ensure seamless and efficient delivery to your location.</li>
+                    <li>We collaborate with premier suppliers, especially in China and Europe.</li>
+                    <li>We offer personalized consultation services to help clients select the perfect pieces.</li>
+                    <li>We organize visits to manufacturers' factories for clients seeking ultimate satisfaction.</li>
+                    <li>We ensure that all our products meet the highest standards of quality and elegance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- <section id="pfbody"></section> -->
+    </section>
+    <section id="whatsapp-floating-icon"></section>
+
+    <script src="/src/Components/Header.js"></script>
+    <script src="/src/Components/Footer.js"></script>
+    <script src="/src/Components/pfHead.js"></script>
+    <script src="/src/Components/pfBody.js"></script>
+    <script src="/src/Components/whatsappFloatingIcon.js"></script>
+
+    <!-- GSAP Animation scripts -->
+    <script src="/src/media/JS/gsap.min.js"></script>
+    <script src="/src/media/JS/ScrollTrigger.min.js"></script>
+
+    <script src="/src/global.js"></script>
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // GSAP Animation Timeline
+            let tlList2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#animated-list-2",
+                    start: "top 80%",  // When the top of the trigger element is 80% from the top of the viewport
+                    end: "top 20%",    // When the top of the trigger element is 20% from the top of the viewport
+                    toggleActions: "play none none reverse",
+                    scrub: 1,          // Smooth scrolling
+                    markers: false     // Set to true if you want to see the trigger points
+                }
+            });
+
+            tlList2.from("#animated-list-2 li", {
+                x: -100,
+                opacity: 0,
+                duration: 0.5,
+                stagger: 0.2,
+                ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+
+</html>

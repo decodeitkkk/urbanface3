@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/global.css">
+    <title>Light Designs</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/media/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/media/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/media/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #1f1f1f; color: white" class="h-screen mx-auto max-w-[1440px] ">
+    <section id="portfolio">
+        <div id="full-image" class="relative mb-5 ">
+            <img loading="eager" class=" w-full  h-auto object-contain md:h-screen md:object-cover "
+                src="/src/media/ig/chandeliers/chandelier-05.jpg" alt="">
+            <div
+                class="absolute bottom-0 flex justify-center items-center w-full backdrop-blur-sm bg-gradient-to-t  from-black/85 font-LibreBaskervilleRegular  text-2xl md:text-4xl py-5 ">
+                Lights </div>
+        </div>
+
+        <div id="title">
+            <div
+                class="font-LibreBaskervilleRegular text-2xl md:text-4xl  my-5 py-5 w-full flex justify-center items-center ">
+                Explore Lights </div>
+        </div>
+
+        <div id="grid">
+            <div class=" w-full my-5 py-5 px-5 md:mb-10 ">
+                <div class="grid sm:grid-cols-2 row-span-3 md:grid-cols-5 h-[100%] gap-2  ">
+                    <div id="grid-image"
+                        class="relative overflow-hidden col-span-1 sm:col-span-2 md:col-span-2 md:row-span-3  h-full ">
+                        <a href="/src/product/chandelier.html" class="block relative overflow-hidden rounded-xl">
+
+                            <img loading="eager"
+                                class=" w-full h-full max-h-96 md:max-h-80 lg:max-h-96 object-cover rounded-xl grayscale hover:grayscale-0 hover:scale-110 ease-in-out duration-700 "
+                                src="/src/media/ig/chandeliers/chandelier-11.jpg" alt="">
+                            <div
+                                class="absolute bottom-0 flex justify-center items-center w-full backdrop-blur-sm bg-gradient-to-t from-black  font-SourceSans3Regular text-xl  uppercase py-3 ">
+                                Chandeliers </div>
+                        </a>
+                    </div>
+
+
+                    <div id="grid-image-2"
+                        class="relative overflow-hidden col-span-1 sm:col-span-1 md:col-span-3 md:row-span-2 rounded-xl  ">
+                        <a href="/src/product/light.html" class="block relative overflow-hidden rounded-xl">
+                            <img loading="eager"
+                                class="w-full h-full max-h-96 object-cover rounded-xl grayscale hover:grayscale-0 hover:scale-110 ease-in-out duration-700"
+                                src="/src/media/ig/lights/light-07.jpg" alt="">
+                            <div
+                                class="absolute bottom-0 flex justify-center items-center w-full backdrop-blur-sm bg-gradient-to-t from-black text-white font-Raleway text-base font-bold uppercase py-3 rounded-b-xl">
+                                Lights
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+    </div>
+    <section id="whatsapp-floating-icon"></section>
+    <div id="cursor"
+        class=" h-10 w-10 bg-yellow-600 rounded-full flex justify-center items-center fixed top-0 left-0 z-50  cursor-none hidden text-[8px] text-center  px-2">
+        view more
+    </div>
+
+
+    <script src="/src/Components/Header.js"></script>
+    <script src="/src/Components/Footer.js"></script>
+    <script src="/src/Components/whatsappFloatingIcon.js"></script>
+
+    <!-- GSAP Animation scripts -->
+    <script src="/src/media/JS/gsap.min.js"></script>
+    <script src="/src/media/JS/ScrollTrigger.min.js"></script>
+
+    <!-- <script src="/src/Components/pfHead.js"></script> -->
+    <script src="/src/Components/pfBody.js"></script>
+    <script src="/src/global.js"></script>
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.from("#full-image", {
+                delay: 1,
+                opacity: 0,
+                duration: 0.5,
+                y: 100
+            })
+
+
+            gsap.from("#title", {
+                opacity: 0,
+                duration: 0.5,
+                markers: false,
+                y: 100,
+                // toggleActions: "play reverse play reverse",
+                scrollTrigger: {
+                    trigger: "#title",
+                    scroller: "body",
+                    start: "top 40%",
+                    end: "top 0%",
+                }
+            })
+
+
+            let row1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#grid-image",
+                    scroller: "body",
+                    markers: false,
+                    // scrub: true,
+                    start: "top 60%",
+                    end: "top -50%",
+                    // toggleActions: "play reverse play reverse",
+                },
+            });
+            row1.from("#grid-image, #grid-image-2", {
+                opacity: 0,
+                y: 100,
+                duration: 0.5,
+                stagger: 0.5,
+            })
+
+            let row2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#grid-image-3",
+                    scroller: "body",
+                    markers: false,
+                    // scrub: true,
+                    start: "top 60%",
+                    end: "top -100%",
+                    // toggleActions: "play reverse play reverse",
+                },
+            });
+            row2.from("#grid-image-3, #grid-image-4", {
+                opacity: 0,
+                y: 100,
+                duration: 0.5,
+                stagger: 0.5,
+
+            })
+
+        });
+    </script>
+</body>
+
+</html>

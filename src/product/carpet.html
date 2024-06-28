@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/global.css">
+    <title>Carpet Designs</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/media/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/media/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/media/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+        body {
+            margin: 0;
+            background: #15151e;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="product"></section>
+    <section id="whatsapp-floating-icon"></section>
+
+
+    <script src="/src/Components/Header.js"></script>
+    <script src="/src/Components/Footer.js"></script>
+    <script src="/src/Components/whatsappFloatingIcon.js"></script>
+
+    <!-- GSAP Animation scripts -->
+    <script src="/src/media/JS/gsap.min.js"></script>
+    <script src="/src/media/JS/ScrollTrigger.min.js"></script>
+    <script src="/src/global.js"></script>
+    <script src="/src/Components/product.js"></script>
+    <script>
+        let img = [
+            "/src/media/ig/carpets/carpet-01.jpg",
+            "/src/media/ig/carpets/carpet-02.jpg",
+            "/src/media/ig/carpets/carpet-03.jpg",
+            "/src/media/ig/carpets/carpet-04.jpg",
+            "/src/media/ig/carpets/carpet-05.jpg",
+            "/src/media/ig/carpets/carpet-06.jpg",
+            "/src/media/ig/carpets/carpet-07.jpg",
+            "/src/media/ig/carpets/carpet-08.jpg",
+            "/src/media/ig/carpets/carpet-09.jpg",
+            "/src/media/ig/carpets/carpet-10.jpg",
+            "/src/media/ig/carpets/carpet-11.jpg",
+            "/src/media/ig/carpets/carpet-12.jpg",
+            "/src/media/ig/carpets/carpet-13.jpg",
+            "/src/media/ig/carpets/carpet-14.jpg",
+            "/src/media/ig/carpets/carpet-15.jpg",
+            "/src/media/ig/carpets/carpet-16.jpg",
+            "/src/media/ig/carpets/carpet-17.jpg",
+            "/src/media/ig/carpets/carpet-18.jpg",
+            "/src/media/ig/carpets/carpet-19.jpg",
+            "/src/media/ig/carpets/carpet-20.jpg",
+            "/src/media/ig/carpets/carpet-21.jpg",
+            "/src/media/ig/carpets/carpet-22.jpg",
+            "/src/media/ig/carpets/carpet-23.jpg",
+            "/src/media/ig/carpets/carpet-24.jpg",
+            "/src/media/ig/carpets/carpet-25.jpg",
+            "/src/media/ig/carpets/carpet-26.jpg",
+            "/src/media/ig/carpets/carpet-27.jpg",
+            "/src/media/ig/carpets/carpet-28.jpg",
+            "/src/media/ig/carpets/carpet-29.jpg",
+            "/src/media/ig/carpets/carpet-30.jpg",
+            "/src/media/ig/carpets/carpet-31.jpg",
+            "/src/media/ig/carpets/carpet-32.jpg",
+            "/src/media/ig/carpets/carpet-33.jpg",
+            "/src/media/ig/carpets/carpet-34.jpg",
+            "/src/media/ig/carpets/carpet-35.jpg",
+            "/src/media/ig/carpets/carpet-36.jpg",
+            "/src/media/ig/carpets/carpet-37.jpg",
+            "/src/media/ig/carpets/carpet-38.jpg",
+            "/src/media/ig/carpets/carpet-39.jpg",
+            "/src/media/ig/carpets/carpet-40.jpg",
+            "/src/media/ig/carpets/carpet-41.jpg",
+            "/src/media/ig/carpets/carpet-42.jpg",
+            "/src/media/ig/carpets/carpet-43.jpg",
+            "/src/media/ig/carpets/carpet-44.jpg",
+            "/src/media/ig/carpets/carpet-45.jpg",
+            "/src/media/ig/carpets/carpet-46.jpg",
+            "/src/media/ig/carpets/carpet-47.jpg",
+            "/src/media/ig/carpets/carpet-48.jpg",
+            "/src/media/ig/carpets/carpet-49.jpg",
+            "/src/media/ig/carpets/carpet-50.jpg",
+            "/src/media/ig/carpets/carpet-51.jpg",
+            "/src/media/ig/carpets/carpet-52.jpg",
+            "/src/media/ig/carpets/carpet-53.jpg",
+            "/src/media/ig/carpets/carpet-54.jpg",
+            "/src/media/ig/carpets/carpet-55.jpg",
+            "/src/media/ig/carpets/carpet-56.jpg",
+            "/src/media/ig/carpets/carpet-57.jpg",
+            "/src/media/ig/carpets/carpet-58.jpg",
+            "/src/media/ig/carpets/carpet-59.jpg",
+            "/src/media/ig/carpets/carpet-60.jpg",
+            "/src/media/ig/carpets/carpet-61.jpg",
+            "/src/media/ig/carpets/carpet-62.jpg",
+            "/src/media/ig/carpets/carpet-63.jpg",
+            "/src/media/ig/carpets/carpet-64.jpg",
+            "/src/media/ig/carpets/carpet-65.jpg",
+            "/src/media/ig/carpets/carpet-66.jpg",
+            "/src/media/ig/carpets/carpet-67.jpg",
+            "/src/media/ig/carpets/carpet-68.jpg",
+            "/src/media/ig/carpets/carpet-69.jpg",
+            "/src/media/ig/carpets/carpet-70.jpg",
+            "/src/media/ig/carpets/carpet-71.jpg",
+            "/src/media/ig/carpets/carpet-72.jpg",
+            "/src/media/ig/carpets/carpet-73.jpg",
+            "/src/media/ig/carpets/carpet-74.jpg",
+            "/src/media/ig/carpets/carpet-75.jpg",
+            "/src/media/ig/carpets/carpet-76.jpg",
+            "/src/media/ig/carpets/carpet-77.jpg",
+            "/src/media/ig/carpets/carpet-78.jpg",
+            "/src/media/ig/carpets/carpet-79.jpg",
+            "/src/media/ig/carpets/carpet-80.jpg",
+            "/src/media/ig/carpets/carpet-81.jpg",
+            "/src/media/ig/carpets/carpet-82.jpg",
+            "/src/media/ig/carpets/carpet-83.jpg",
+            "/src/media/ig/carpets/carpet-84.jpg",
+            "/src/media/ig/carpets/carpet-85.jpg",
+            "/src/media/ig/carpets/carpet-86.jpg",
+            "/src/media/ig/carpets/carpet-87.jpg",
+            "/src/media/ig/carpets/carpet-88.jpg",
+            "/src/media/ig/carpets/carpet-89.jpg",
+            "/src/media/ig/carpets/carpet-90.jpg",
+            "/src/media/ig/carpets/carpet-91.jpg",
+            "/src/media/ig/carpets/carpet-92.jpg",
+            "/src/media/ig/carpets/carpet-93.jpg",
+            "/src/media/ig/carpets/carpet-94.jpg",
+            "/src/media/ig/carpets/carpet-95.jpg",
+            "/src/media/ig/carpets/carpet-96.jpg",
+            "/src/media/ig/carpets/carpet-97.jpg",
+            "/src/media/ig/carpets/carpet-98.jpg",
+            "/src/media/ig/carpets/carpet-99.jpg",
+            "/src/media/ig/carpets/carpet-100.jpg",
+            "/src/media/ig/carpets/carpet-101.jpg",
+            "/src/media/ig/carpets/carpet-102.jpg",
+            "/src/media/ig/carpets/carpet-103.jpg",
+            "/src/media/ig/carpets/carpet-104.jpg",
+            "/src/media/ig/carpets/carpet-105.jpg",
+            "/src/media/ig/carpets/carpet-106.jpg",
+            "/src/media/ig/carpets/carpet-107.jpg",
+            "/src/media/ig/carpets/carpet-108.jpg",
+            "/src/media/ig/carpets/carpet-109.jpg",
+            "/src/media/ig/carpets/carpet-110.jpg",
+            "/src/media/ig/carpets/carpet-111.jpg",
+            "/src/media/ig/carpets/carpet-112.jpg",
+            "/src/media/ig/carpets/carpet-113.jpg",
+            "/src/media/ig/carpets/carpet-114.jpg",
+            "/src/media/ig/carpets/carpet-115.jpg",
+            "/src/media/ig/carpets/carpet-116.jpg",
+            "/src/media/ig/carpets/carpet-117.jpg",
+            "/src/media/ig/carpets/carpet-118.jpg",
+            "/src/media/ig/carpets/carpet-119.jpg",
+            "/src/media/ig/carpets/carpet-120.jpg",
+            "/src/media/ig/carpets/carpet-121.jpg",
+            "/src/media/ig/carpets/carpet-122.jpg",
+            "/src/media/ig/carpets/carpet-123.jpg",
+            "/src/media/ig/carpets/carpet-124.jpg",
+            "/src/media/ig/carpets/carpet-125.jpg",
+            "/src/media/ig/carpets/carpet-126.jpg",
+            "/src/media/ig/carpets/carpet-127.jpg",
+            "/src/media/ig/carpets/carpet-128.jpg",
+            "/src/media/ig/carpets/carpet-129.jpg",
+            "/src/media/ig/carpets/carpet-130.jpg",
+            "/src/media/ig/carpets/carpet-131.jpg",
+            "/src/media/ig/carpets/carpet-132.jpg",
+            "/src/media/ig/carpets/carpet-133.jpg",
+            "/src/media/ig/carpets/carpet-134.jpg",
+            "/src/media/ig/carpets/carpet-135.jpg",
+            "/src/media/ig/carpets/carpet-136.jpg",
+            "/src/media/ig/carpets/carpet-137.jpg",
+            "/src/media/ig/carpets/carpet-138.jpg",
+            "/src/media/ig/carpets/carpet-139.jpg",
+            "/src/media/ig/carpets/carpet-140.jpg",
+            "/src/media/ig/carpets/carpet-141.jpg",
+            "/src/media/ig/carpets/carpet-142.jpg",
+            "/src/media/ig/carpets/carpet-143.jpg",
+            "/src/media/ig/carpets/carpet-144.jpg",
+            "/src/media/ig/carpets/carpet-145.jpg",
+            "/src/media/ig/carpets/carpet-146.jpg",
+            "/src/media/ig/carpets/carpet-147.jpg",
+            "/src/media/ig/carpets/carpet-148.jpg",
+            "/src/media/ig/carpets/carpet-149.jpg",
+            "/src/media/ig/carpets/carpet-150.jpg",
+            "/src/media/ig/carpets/carpet-151.jpg",
+            "/src/media/ig/carpets/carpet-152.jpg",
+            "/src/media/ig/carpets/carpet-153.jpg",
+            "/src/media/ig/carpets/carpet-154.jpg",
+            "/src/media/ig/carpets/carpet-155.jpg",
+            "/src/media/ig/carpets/carpet-156.jpg",
+            "/src/media/ig/carpets/carpet-157.jpg",
+            "/src/media/ig/carpets/carpet-158.jpg",
+            "/src/media/ig/carpets/carpet-159.jpg",
+            "/src/media/ig/carpets/carpet-160.jpg",
+            "/src/media/ig/carpets/carpet-161.jpg"
+        ];
+        let product = document.getElementById("product")
+
+        // ---------------------------< Component called
+        product.insertAdjacentHTML("afterbegin", Product(
+            "Elegant Carpet Gallery",
+            " Discover the Exquisite Luxury of Our Premium Designs ",
+            img))
+
+        // ---------------------------< GSAP Animation Code 
+        document.addEventListener("DOMContentLoaded", function () {
+
+            let delayValue = () => {
+                return window.innerWidth < 768 ? 0 : 2;
+            };
+            let prtl = gsap.timeline()
+            prtl.from("#product-title, #product-desc, #product-scroll-down", {
+                y: 100,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.4,
+                delay: delayValue,
+                toggleActions: "play reverse play reverse",
+            })
+
+
+
+            const races = document.querySelector(".races");
+            console.log(races.offsetWidth, window.innerWidth);
+
+            function getScrollAmount() {
+                let racesWidth = races.scrollWidth;
+                return -(racesWidth - window.innerWidth);
+            }
+            let sa = getScrollAmount();
+            // console.log(races.scrollwidth, sa)
+            const tween = gsap.to(races, {
+                x: getScrollAmount,
+                duration: 3,
+                ease: "none",
+                onUpdate: ScrollTrigger.update, // Ensure smooth updates
+            });
+
+            let startValue = () => {
+                return window.innerWidth < 768 ? "top 30%" : "top 15%";
+            };
+
+            ScrollTrigger.create({
+                trigger: ".racesWrapper",
+                start: startValue,
+                end: () => `-=${getScrollAmount()}`,
+                pin: true,
+                animation: tween,
+                scrub: 1,
+                invalidateOnRefresh: true,
+                markers: false,
+            });
+            // Refresh ScrollTrigger and GSAP on resize for better responsiveness
+            window.addEventListener("resize", () => {
+                ScrollTrigger.refresh();
+            });
+        })
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/global.css">
+    <title>Faucet Designs</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/media/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/media/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/media/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+        body {
+            margin: 0;
+            background: #15151e;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="product"></section>
+    <section id="whatsapp-floating-icon"></section>
+
+
+    <script src="/src/Components/Header.js"></script>
+    <script src="/src/Components/Footer.js"></script>
+    <script src="/src/Components/whatsappFloatingIcon.js"></script>
+
+    <!-- GSAP Animation scripts -->
+    <script src="/src/media/JS/gsap.min.js"></script>
+    <script src="/src/media/JS/ScrollTrigger.min.js"></script>
+    <script src="/src/global.js"></script>
+    <script src="/src/Components/product.js"></script>
+    <script>
+        let img = [
+            "/src/media/ig/artwork/artwork-01.jpg",
+            "/src/media/ig/artwork/artwork-02.jpg",
+            "/src/media/ig/artwork/artwork-03.jpg",
+            "/src/media/ig/artwork/artwork-04.jpg",
+            "/src/media/ig/artwork/artwork-05.jpg",
+            "/src/media/ig/artwork/artwork-06.jpg",
+            "/src/media/ig/artwork/artwork-07.jpg",
+            "/src/media/ig/artwork/artwork-08.jpg",
+            "/src/media/ig/artwork/artwork-09.jpg",
+            "/src/media/ig/artwork/artwork-10.jpg",
+            "/src/media/ig/artwork/artwork-11.jpg",
+            "/src/media/ig/artwork/artwork-12.jpg",
+            "/src/media/ig/artwork/artwork-13.jpg",
+            "/src/media/ig/artwork/artwork-14.jpg",
+            "/src/media/ig/artwork/artwork-15.jpg",
+            "/src/media/ig/artwork/artwork-16.jpg",
+            "/src/media/ig/artwork/artwork-17.jpg",
+            "/src/media/ig/artwork/artwork-18.jpg",
+            "/src/media/ig/artwork/artwork-19.jpg",
+            "/src/media/ig/artwork/artwork-20.jpg",
+            "/src/media/ig/artwork/artwork-21.jpg",
+            "/src/media/ig/artwork/artwork-22.jpg",
+            "/src/media/ig/artwork/artwork-23.jpg",
+            "/src/media/ig/artwork/artwork-24.jpg",
+            "/src/media/ig/artwork/artwork-25.jpg",
+            "/src/media/ig/artwork/artwork-26.jpg",
+            "/src/media/ig/artwork/artwork-27.jpg",
+            "/src/media/ig/artwork/artwork-28.jpg",
+            "/src/media/ig/artwork/artwork-29.jpg",
+            "/src/media/ig/artwork/artwork-30.jpg",
+            "/src/media/ig/artwork/artwork-31.jpg",
+            "/src/media/ig/artwork/artwork-32.jpg",
+            // "/src/media/ig/artwork/artwork-33.jpg",
+            // "/src/media/ig/artwork/artwork-34.jpg",
+            "/src/media/ig/artwork/artwork-35.jpg",
+            "/src/media/ig/artwork/artwork-36.jpg",
+            "/src/media/ig/artwork/artwork-37.jpg",
+            "/src/media/ig/artwork/artwork-38.jpg",
+            "/src/media/ig/artwork/artwork-39.jpg",
+            "/src/media/ig/artwork/artwork-40.jpg",
+            "/src/media/ig/artwork/artwork-41.jpg",
+            "/src/media/ig/artwork/artwork-42.jpg",
+            "/src/media/ig/artwork/artwork-43.jpg",
+            "/src/media/ig/artwork/artwork-44.jpg",
+            "/src/media/ig/artwork/artwork-45.jpg",
+            "/src/media/ig/artwork/artwork-46.jpg",
+            "/src/media/ig/artwork/artwork-47.jpg",
+            "/src/media/ig/artwork/artwork-48.jpg",
+            "/src/media/ig/artwork/artwork-49.jpg",
+            "/src/media/ig/artwork/artwork-50.jpg",
+            "/src/media/ig/artwork/artwork-51.jpg",
+            "/src/media/ig/artwork/artwork-52.jpg",
+            "/src/media/ig/artwork/artwork-53.jpg",
+            "/src/media/ig/artwork/artwork-54.jpg",
+            "/src/media/ig/artwork/artwork-55.jpg",
+            "/src/media/ig/artwork/artwork-56.jpg",
+            "/src/media/ig/artwork/artwork-57.jpg",
+            "/src/media/ig/artwork/artwork-58.jpg",
+            "/src/media/ig/artwork/artwork-59.jpg",
+            "/src/media/ig/artwork/artwork-60.jpg",
+            "/src/media/ig/artwork/artwork-61.jpg",
+            "/src/media/ig/artwork/artwork-62.jpg",
+            "/src/media/ig/artwork/artwork-63.jpg",
+            "/src/media/ig/artwork/artwork-64.jpg",
+            "/src/media/ig/artwork/artwork-65.jpg",
+            "/src/media/ig/artwork/artwork-66.jpg",
+            "/src/media/ig/artwork/artwork-67.jpg",
+            "/src/media/ig/artwork/artwork-68.jpg",
+            "/src/media/ig/artwork/artwork-69.jpg",
+            "/src/media/ig/artwork/artwork-70.jpg",
+            "/src/media/ig/artwork/artwork-71.jpg",
+            "/src/media/ig/artwork/artwork-72.jpg",
+            "/src/media/ig/artwork/artwork-73.jpg",
+            "/src/media/ig/artwork/artwork-74.jpg",
+            "/src/media/ig/artwork/artwork-75.jpg",
+            "/src/media/ig/artwork/artwork-76.jpg",
+            "/src/media/ig/artwork/artwork-77.jpg",
+            "/src/media/ig/artwork/artwork-78.jpg",
+            "/src/media/ig/artwork/artwork-79.jpg",
+            "/src/media/ig/artwork/artwork-80.jpg",
+            "/src/media/ig/artwork/artwork-81.jpg",
+            "/src/media/ig/artwork/artwork-82.jpg",
+            "/src/media/ig/artwork/artwork-83.jpg",
+            "/src/media/ig/artwork/artwork-84.jpg",
+            "/src/media/ig/artwork/artwork-85.jpg",
+            "/src/media/ig/artwork/artwork-86.jpg",
+            "/src/media/ig/artwork/artwork-87.jpg",
+            "/src/media/ig/artwork/artwork-88.jpg",
+            "/src/media/ig/artwork/artwork-89.jpg",
+            "/src/media/ig/artwork/artwork-90.jpg",
+            "/src/media/ig/artwork/artwork-91.jpg",
+            "/src/media/ig/artwork/artwork-92.jpg",
+            "/src/media/ig/artwork/artwork-93.jpg"
+        ];
+        let product = document.getElementById("product")
+
+        // ---------------------------< Component called
+        product.insertAdjacentHTML("afterbegin", Product(
+            "Elegant Artwork Gallery",
+            " Discover the Exquisite Luxury of Our Premium Designs ",
+            img))
+
+        // ---------------------------< GSAP Animation Code 
+        document.addEventListener("DOMContentLoaded", function () {
+
+            let delayValue = () => {
+                return window.innerWidth < 768 ? 0 : 2;
+            };
+            let prtl = gsap.timeline()
+            prtl.from("#product-title, #product-desc, #product-scroll-down", {
+                y: 100,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.4,
+                delay: delayValue,
+                toggleActions: "play reverse play reverse",
+            })
+
+
+
+            const races = document.querySelector(".races");
+            console.log(races.offsetWidth, window.innerWidth);
+
+            function getScrollAmount() {
+                let racesWidth = races.scrollWidth;
+                return -(racesWidth - window.innerWidth);
+            }
+            let sa = getScrollAmount();
+            // console.log(races.scrollwidth, sa)
+            const tween = gsap.to(races, {
+                x: getScrollAmount,
+                duration: 3,
+                ease: "none",
+                onUpdate: ScrollTrigger.update, // Ensure smooth updates
+            });
+
+            let startValue = () => {
+                return window.innerWidth < 768 ? "top 30%" : "top 15%";
+            };
+
+            ScrollTrigger.create({
+                trigger: ".racesWrapper",
+                start: startValue,
+                end: () => `-=${getScrollAmount()}`,
+                pin: true,
+                animation: tween,
+                scrub: 1,
+                invalidateOnRefresh: true,
+                markers: false,
+            });
+            // Refresh ScrollTrigger and GSAP on resize for better responsiveness
+            window.addEventListener("resize", () => {
+                ScrollTrigger.refresh();
+            });
+        })
+    </script>
+
+
+</body>
+
+</html>

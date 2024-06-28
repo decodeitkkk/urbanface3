@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/global.css">
+    <title>Architectural Designs</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/media/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/media/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/media/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #1f1f1f; color: white" class="h-screen w-full">
+    <section id="portfolio">
+        <section id="pfHead">
+            <div class="h-screen sm:h-screen sm:block">
+                <div id="bgImg"
+                    class="bg-[url('/src/media/images/arch.jpg')] h-full w-full bg-center bg-cover flex flex-row items-end">
+                    <div
+                        class="text-xl sm:text-5xl sm:px-14 sm:leading-10 leading-7 text-white font-WorkSans400 mt-0 align-text-bottom bg-gradient-to-t from-black /20 w-full py-2 sm:py-6">
+                        <div class="text-center font-bold text-3xl sm:px-14 sm:text-5xl uppercase">
+                            Architectural Designs
+                        </div>
+
+                        <div class="px-5 py-6 sm:flex sm:flex-row sm:gap-x-2 sm:justify-between capitalize sm:text-3xl">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Doloremque doloribus
+                            voluptatibus quae illum consequuntur cumque.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pfbody"></section>
+    </section>
+    <section id="whatsapp-floating-icon"></section>
+
+    <script src="/src/Components/Header.js"></script>
+    <script src="/src/Components/Footer.js"></script>
+    <script src="/src/Components/whatsappFloatingIcon.js"></script>
+    <!-- <script src="/src/Components/pfHead.js"></script> -->
+    <script src="/src/Components/pfBody.js"></script>
+    <script src="/src/global.js"></script>
+    <script>
+        let data = [
+            {
+                img: "/src/media/images/portfolio_062.jpg",
+                img2: "/src/media/images/arch_1.jpg",
+                desc: "UrbanFace transforms retail spaces into captivating destinations, infusing style and innovation for unparalleled shopping experiences",
+            },
+            {
+                img: "/src/media/images/portfolio_082.jpg",
+                img2: "/src/media/images/arch_2.jpg",
+                desc: "UrbanFace designs upscale wine boutiques, marrying opulence with functionality for refined oenophilic experiences.",
+            },
+            {
+                img: "/src/media/images/portfolio_062.jpg",
+                img2: "/src/media/images/arch_3.jpg",
+                desc: "UrbanFace creates romantic retreats amidst nature, offering secluded luxury for unforgettable getaways.",
+            },
+            {
+                img: "/src/media/images/portfolio_082.jpg",
+                img2: "/src/media/images/arch_4.jpg",
+                desc: "UrbanFace crafts elegant bars for luxurious socializing, blending sophistication with impeccable design finesse.",
+            },
+        ];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document
+                .getElementById("pfbody")
+                .insertAdjacentHTML("afterbegin", PfBody(data));
+        });
+    </script>
+</body>
+
+</html>
