@@ -1,236 +1,165 @@
 <!DOCTYPE html>
-<html class="dark">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/src/media/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/src/media/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/src/media/favicon/favicon-16x16.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="/src/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/global.css">
-    <title>Urbanface</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <style>
+        /* ---- reset ---- */
 
+
+
+
+
+        /* ---- particles.js container ---- */
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #b61924;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        /* ---- stats.js ---- */
+    </style>
 </head>
 
-<body style="background-color: #1f1f1f; color: white">
-    <section id="video">
-        <div class="w-full h-auto overflow-hidden ">
-            <video preload="metadata" autoplay muted loop
-                class="w-full h-full object-cover  backdrop-blur-sm  sm:h-full">
-                <source src="/src/media/images/banner_video.mp4" type="video/mp4" />
-            </video>
-        </div>
-    </section>
-    <section id="content">
-        <div class="py-10 md:h-screen md:flex md:flex-col md:px-12 bg-black">
-            <section class="flex flex-wrap items-center gap-x-16">
-                <div class="flex-1 min-w-[300px]">
-                    <div class="flow content">
-                        <h2>Add some lag (the good kind!)</h2>
-                        <p>loosen the connection to the scroll to give a feeling of 'follow through.'</p>
-                    </div>
-                </div>
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
 
-                <div class="flex-1 min-w-[500px] flex items-center justify-center">
-                    <h3 class="font-wild_worldbold text-[clamp(16px,6vw,80px)] tracking-[0.03em]" id="split-stagger">
-                        stagger...
-                    </h3>
-                </div>
-            </section>
-            <div id="home-content-title" class="uppercase font-LibreBaskervilleRegular text-2xl md:text-6xl  px-4">
-                Urbanface
-            </div>
-            <div id="home-content-subtitle"
-                class="font-LibreBaskervilleRegular uppercase text-sm md:text-2xl  px-4 my-2">
-                design | art | architecture
-            </div>
-            <div id="home-content-desc" class="font-FigtreeMedium text-xl md:text-2xl md:w-3/4 text-left  px-4 my-4">
-                Welcome to Urban Face, your premier partner in global procurement and sourcing for luxurious residential
-                and commercial projects. Specializing in sourcing high-quality furniture and décor from China and
-                Europe, we provide tailored solutions to meet your unique needs. Our comprehensive services cover every
-                aspect of sourcing, including customization options to ensure your vision is brought to life. We
-                prioritize client satisfaction, value your feedback, and offer robust post-delivery support. Trust Urban
-                Face to deliver exceptional quality and transform your spaces with unparalleled expertise and
-                dedication.
-            </div>
-            <div id="home-content-btn"
-                class="font-FigtreeBold uppercase hover:underline hover:underline-offset-8 text-lg md:text-2xl text-left  px-4 my-4 hover:text-yellow-500  ">
-                <a href="/src/pages/about.html" class=" border border-t-0 border-r-0 border-l-0 welcome-border"> Welcome
-                    to UrbanFace </a>
-            </div>
-        </div>
-    </section>
-    <section id="category">
-        <div class="relative h-screen overflow-hidden md:flex md:flex-row md:justify-between">
-            <!-- Mobile view -->
-            <div
-                class="md:relative font-FigtreeMedium absolute h-full inset-0 flex flex-col justify-center items-start text-white z-10 ">
-                <!-- Headings -->
-                <h1 id="architectural"
-                    class="text-white/70 hover:text-white font-WorkSans500 text-2xl md:text-4xl md:my-3 md:0 p-4 md:ps-16 cursor-pointer bg-gradient-to-r from-black/50 backdrop-blur md:backdrop-blur-none md:bg-gradient-to-r md:from-transparent">
-                    Procurement and Sourcing
-                </h1>
-                <h1 id="residential"
-                    class="text-white/70 hover:text-white font-WorkSans500 text-2xl md:text-4xl md:my-3 md:0 p-4 md:ps-16 cursor-pointer bg-gradient-to-r from-black/50 backdrop-blur md:backdrop-blur-none md:bg-gradient-to-r md:from-transparent">
-                    Client Satisfaction
-                </h1>
-                <h1 id="commercial"
-                    class="text-white/70 hover:text-white font-WorkSans500 text-2xl md:text-4xl md:my-3 md:0 p-4 md:ps-16 cursor-pointer bg-gradient-to-r from-black/50 backdrop-blur md:backdrop-blur-none md:bg-gradient-to-r md:from-transparent">
-                    Experiential design
-                </h1>
-            </div>
+   
+    
+    <div class="text-yellow-300 absolute top-[50%] left-[50%] ">
+        center vidoe
+    </div>
 
-            <!-- Video player -->
-            <video id="video2" preload="metadata" class="h-full w-full md:w-auto object-cover -z-10 " autoplay loop
-                muted>
-                <source id="cat_video" src="/src/media/images/cat_glass_5.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+    <!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
 
-            <!-- Desktop view -->
-        </div>
-    </section>
-    <section id="video3">
-        <div class="panel orangeWrapper">
-            <section class="panel orange w-full h-screen overflow-hidden relative">
-                <h2 class="">
-                    <span class="line line-2"></span>
-                    <video preload="metadata" autoplay loop muted class="h-full w-full object-cover absolute">
-                        <source src="/src/media/images/banner_video3.mp4" type="video/mp4" />
-                    </video>
-                    <!-- <span class="absolute top-2/4 left-44 text-4xl">
-                            Urbanface Video
-                        </span> -->
-                </h2>
-            </section>
-        </div>
-    </section>
-    <section id="contact"></section>
-    <section id="whatsapp-floating-icon"></section>
-
-    <script src="/src/Components/Header.js"></script>
-    <script src="/src/Components/Footer.js"></script>
-    <script src="/src/Components/contact.js"></script>
-    <script src="/src/Components/whatsappFloatingIcon.js"></script>
-
-    <!-- GSAP Animation scripts -->
-    <script src="/src/media/JS/gsap.min.js"></script>
-    <script src="/src/media/JS/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
-        integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-    <script src="/src/global.js"></script>
+    <script src="/src/particles.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document
-                .getElementById("contact")
-                .insertAdjacentHTML("afterbegin", Contact);
-            // Initialize GSAP animations after HTML is inserted
+        /* ---- particles.js config ---- */
 
-
-            let arch = document.getElementById("architectural");
-            let resd = document.getElementById("residential");
-            let comm = document.getElementById("commercial");
-            let vid = document.getElementById("video2");
-            arch.addEventListener(
-                "mouseover",
-                () => {
-                    vid.src = "/src/media/images/cat_glass_5.mp4";
-                    vid.load();
-                },
-                false
-            );
-            resd.addEventListener(
-                "mouseover",
-                () => {
-                    vid.src = "/src/media/images/cat_outside_2.mp4";
-                    vid.load();
-                },
-                false
-            );
-            comm.addEventListener(
-                "mouseover",
-                () => {
-                    vid.src = "/src/media/images/cat_steps_2.mp4";
-                    vid.load();
-                    isSupp = vid.canPlayType("video/mp4");
-                    if (isSupp == "") {
-                        vid.src = "/src/media/images/cat_steps_2.mp4";
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 120,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
                     }
-                    vid.load();
                 },
-                false
-            );
-
-            gsap.registerPlugin(ScrollTrigger);
-
-            // --- ORANGE PANEL ---
-
-            const tlO = gsap
-                .timeline({
-                    scrollTrigger: {
-                        trigger: ".orangeWrapper",
-                        scrub: true,
-                        pin: true,
-                        // markers:true,
-                        start: "50% 50%",
-                        end: "+=300%",
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
                     },
-                })
-
-            tlO.from(".orange", {
-                scale: 0.5,
-                ease: "none",
-            })
-
-            tlO.from(
-                ".line-2",
-                {
-                    scaleX: 0,
-                    ease: "none",
-                    transformOrigin: "left top",
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
                 },
-                0
-            );
-
-            let hcb = document.getElementById("#home-content-btn")
-            hcb.addEventListener(" mouseover ", () => {
-                gsap.from(".welcome-border", {
-                    x: -100,
-                    opacity: 0,
-                    duration: 0.5,
-                    stagger: 0.1,
-                    
-                })
-            })
-
-            gsap - extra.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
-            let tl = gsap - extra.timeline();
-            let mySplitText = new SplitText("#split-stagger", { type: "words,chars" });
-            let chars = mySplitText.chars;
-
-            chars.forEach((char, i) => {
-                smoother.effects(char, { speed: 1, lag: (i + 1) * 0.1 });
-            });
-
-
-
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
         });
+
+
+      
     </script>
-
-    <!--Start of tidio.co Script-->
-    <!-- <script src="//code.tidio.co/vf20czv7uudcvxxbp9142ss1jgmbxwrw.js" async></script> -->
-    <!--End of tidio Script-->
-
 </body>
 
 </html>
