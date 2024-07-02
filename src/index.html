@@ -12,18 +12,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="/src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/global.css">
-    <style>
-        /* #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: #1f1f1f;
-            background-image: url("");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 100% 100%;
-        } */
-    </style>
     <title>Urbanface</title>
 
 </head>
@@ -33,13 +21,17 @@
         <div class="w-full h-screen overflow-hidden ">
             <video preload="metadata" autoplay muted loop
                 class="w-full h-full object-cover  backdrop-blur-sm  sm:h-full">
-                <source src="/src/media/images/banner_video.mp4" type="video/mp4" />
+                <source
+                    src="https://res.cloudinary.com/dgebxxagb/video/upload/v1719811143/URBANFACE/banner_video_e4k3br.mp4"
+                    type="video/mp4" />
             </video>
         </div>
     </section>
     <section id="content" class="h-screen overflow-hidden relative">
         <div class="absolute inset-0 z-0 ">
-            <img class="w-full h-full object-cover grayscale" src="/src/media/images/gif-3.gif" alt="background-image">
+            <img class="w-full h-full object-cover grayscale"
+                src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719856148/URBANFACE/images/gif-3_elhapd.gif"
+                alt="background-image">
         </div>
         <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
         <div class="relative z-20 flex flex-col justify-center py-10 px-4 md:h-screen md:px-12 w-full h-full my-auto">
@@ -87,7 +79,9 @@
             <!-- Video player -->
             <video id="video2" preload="metadata"
                 class="h-full w-full  object-cover -z-10 rounded-l-3xl overflow-hidden " autoplay loop muted>
-                <source id="cat_video" class="" src="/src/media/images/cat_glass_5.mp4" type="video/mp4" />
+                <source id="cat_video" class=""
+                    src="https://res.cloudinary.com/dgebxxagb/video/upload/v1719811549/URBANFACE/cat_glass_5_uzpsnc.mp4"
+                    type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 
@@ -96,46 +90,71 @@
     </section>
 
     <section>
-
         <div class="panel orangeWrapper ">
-
-
             <section id="particles-js" class="panel orange w-full h-screen overflow-hidden  relative  ">
                 <div class="  ">
                     <!-- <span class="line line-2"></span> -->
                     <video preload="metadata" autoplay loop muted
                         class="h-[60%]  w-[60%] object-cover absolute inset-0  mx-auto my-auto  rounded-3xl overflow-hidden ">
 
-                        <source class="" src="/src/media/images/banner_video.mp4" type="video/mp4" />
+                        <source class=""
+                            src="https://res.cloudinary.com/dgebxxagb/video/upload/v1719811143/URBANFACE/banner_video_e4k3br.mp4"
+                            type="video/mp4" />
                     </video>
                     <!-- <div class=" bg-black absolute left-24 h-[80%]  w-[80%] object-cover  ">
                     </div> -->
 
                     </d>
             </section>
-
         </div>
     </section>
 
     <section id="contact"></section>
     <section id="whatsapp-floating-icon"></section>
 
-    <script src="/src/Components/Header.js"></script>
-    <script src="/src/Components/Footer.js"></script>
-    <script src="/src/Components/contact.js"></script>
-    <script src="/src/Components/whatsappFloatingIcon.js"></script>
+    <script defer src="/src/Components/Header.js"></script>
+    <script defer src="/src/Components/Footer.js"></script>
+    <script defer src="/src/Components/contact.js"></script>
+    <script defer src="/src/Components/whatsappFloatingIcon.js"></script>
 
     <!-- GSAP Animation scripts -->
-    <script src="/src/media/JS/gsap.min.js"></script>
-    <script src="/src/media/JS/ScrollTrigger.min.js"></script>
+    <script defer src="/src/media/JS/gsap.min.js"></script>
+    <script defer src="/src/media/JS/ScrollTrigger.min.js"></script>
 
     <!-- particlesjs scripts -->
-    <script src="/src/particles.js"></script>
+    <script defer src="/src/particles.js"></script>
 
 
-    <script src="/src/global.js"></script>
+    <!-- <script defer src="/src/global.js"></script> -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+
+            // for header and footer to every page
+            document.body.insertAdjacentHTML("afterbegin", Header);
+            document.body.insertAdjacentHTML("beforeend", Footer);
+            document
+                .getElementById("whatsapp-floating-icon")
+                .insertAdjacentHTML("afterbegin", whatsappIcons);
+
+            let mob_header = document.querySelector("#mob_header");
+            let btn = document.querySelector("#menu_toggle_btn");
+            let close_btn = document.getElementById("close_btn");
+            mob_header.insertAdjacentHTML("afterbegin", Footer);
+            close_btn.addEventListener(
+                "click",
+                () => {
+                    mob_header.classList.toggle("hidden");
+                },
+                false
+            );
+            btn.addEventListener(
+                "click",
+                () => {
+                    mob_header.classList.toggle("hidden");
+                },
+                false
+            );
+
 
             document
                 .getElementById("contact")
@@ -152,7 +171,7 @@
             arch.addEventListener(
                 "mouseover",
                 () => {
-                    vid.src = "/src/media/images/cat_glass_5.mp4";
+                    vid.src = "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811549/URBANFACE/cat_glass_5_uzpsnc.mp4";
                     vid.load();
                 },
                 false
@@ -160,7 +179,7 @@
             resd.addEventListener(
                 "mouseover",
                 () => {
-                    vid.src = "/src/media/images/cat_outside_2.mp4";
+                    vid.src = "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811550/URBANFACE/cat_outside_2_hhv02i.mp4";
                     vid.load();
                 },
                 false
@@ -168,11 +187,11 @@
             comm.addEventListener(
                 "mouseover",
                 () => {
-                    vid.src = "/src/media/images/cat_steps_2.mp4";
+                    vid.src = "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811547/URBANFACE/cat_steps_2_xq4fxx.mp4";
                     vid.load();
                     isSupp = vid.canPlayType("video/mp4");
                     if (isSupp == "") {
-                        vid.src = "/src/media/images/cat_steps_2.mp4";
+                        vid.src = "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811547/URBANFACE/cat_steps_2_xq4fxx.mp4";
                     }
                     vid.load();
                 },
@@ -180,38 +199,20 @@
             );
 
             gsap.registerPlugin(ScrollTrigger);
-
-            // --- ORANGE PANEL ---
-
             const tlO = gsap
                 .timeline({
                     scrollTrigger: {
                         trigger: ".orangeWrapper",
                         scrub: true,
                         pin: true,
-                        // markers:true,
                         start: "50% 50%",
                         end: "+=300%",
                     },
                 })
-
             tlO.from(".orange", {
                 scale: 0.5,
                 ease: "none",
             })
-
-            // tlO.from(
-            //     ".line-2",
-            //     {
-            //         scaleX: 0,
-            //         ease: "none",
-            //         transformOrigin: "left top",
-            //     },
-            //     0
-            // );
-
-            /* ---- particles.js config ---- */
-
             particlesJS("particles-js", {
                 "particles": {
                     "number": {
@@ -322,16 +323,8 @@
                 },
                 "retina_detect": true
             });
-
-
-
         });
     </script>
-
-    <!--Start of tidio.co Script-->
-    <!-- <script src="//code.tidio.co/vf20czv7uudcvxxbp9142ss1jgmbxwrw.js" async></script> -->
-    <!--End of tidio Script-->
-
 </body>
 
 </html>

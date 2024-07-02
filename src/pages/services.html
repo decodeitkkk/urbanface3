@@ -18,7 +18,7 @@
 <body style="background-color: #1f1f1f; color: white" class="h-screen">
     <div class="h-auto relative sm:block ">
         <!-- <div class="bg-[url('/src/media/images/service_banner.png')] h-full w-full bg-center flex flex-row items-end"> -->
-        <img class="w-full max-h-screen  object-cover " loading="eager" src="/src/media/ig/accessories/artwork-36.jpg"
+        <img class="w-full max-h-screen  object-cover " loading="eager" src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719851360/URBANFACE/accessories/artwork-36_tfsftn.jpg"
             alt="">
         <div class=" bottom-0 absolute   font-LibreBaskervilleBold text-2xl sm:text-3xl md:text-4xl lg:text-4xl sm:px-14   text-white  uppercase  mt-0 align-text-bottom backdrop-blur-sm bg-gradient-to-t from-black/80 w-full py-2 sm:py-6 text-center w-fulll
                     ">
@@ -28,7 +28,9 @@
     </div>
     <section class="relative overflow-y-scroll">
         <div class="absolute inset-0 z-0 gif-container">
-            <img class="w-full h-full object-cover grayscale" src="/src/media/images/gif-3.gif" alt="background-image">
+            <img class="w-full h-full object-cover grayscale"
+                src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719856148/URBANFACE/images/gif-3_elhapd.gif"
+                alt="background-image">
         </div>
         <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
         <div class="relative z-20 py-20 px-10 sm:px-0 text-white">
@@ -100,8 +102,6 @@
                     trigger: section,
                     start: "top 80%",
                     end: "top 20%",
-                    // toggleActions: "play none none reverse",
-                    scrub: 1,
                     markers: false
                 }
             });
@@ -112,12 +112,6 @@
                 duration: 0.5,
                 ease: "power2.out"
             })
-            // .from(`${section} div:last-child`, {
-            //     x: -100,
-            //     opacity: 0,
-            //     duration: 0.5,
-            //     ease: "power2.out"
-            // });
         });
     </script>
 </body>

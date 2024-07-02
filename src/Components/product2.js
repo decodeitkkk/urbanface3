@@ -9,7 +9,7 @@ let Product = (title, desc, imgUrls) => `
         </p>
     </div>
     <div id="product-scroll-down" class="w-32 flex flex-col justify-center items-center">
-        <img class="w-1/2" src="/src/media/ig/scrolldown.gif" alt="">
+        <img class="w-1/2" src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719851978/URBANFACE/scrolldown_xzqd4p.gif" alt="">
         <p class="w-full text-center font-Raleway text-sm">Scroll Down</p>
     </div>
 </div>

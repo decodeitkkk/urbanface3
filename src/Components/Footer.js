@@ -21,12 +21,12 @@ let Footer = `
     <div class="container mx-auto px-4 h-screen">
         <div class="flex flex-col justify-center items-center text-left h-[100vh] sm:flex sm:items-center">
             <video id="footer-video" autoplay loop muted class="absolute z-[-1] w-full h-full object-cover  ">
-                <source src="/src/media/images/sand_video.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dgebxxagb/video/upload/v1719827846/URBANFACE/sand_video_olli8w.mp4" type="video/mp4" />
             </video>
             <div class="w-full px-4 mb-0">
                 <div class="flex flex-wrap sm:flex-nowrap sm:flex sm:flex-row-reverse items-top py-6 text-white">
                     <div id="footer-logo" class="w-full ml-auto hidden sm:block  text-3xl h-8 md:text-5xl md:h-16 ">
-                        <img loading="lazy" class="h-full" src="/src/media/images/logo.png" alt="urbanface-logo">
+                        <img loading="lazy" class="h-full" src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719827647/URBANFACE/logo_q3jyzh.png" alt="urbanface-logo">
                     </div>
                     <div class="w-full ml-auto">
                         <ul class="list-unstyled uppercase font-FigtreeMedium ">

@@ -21,7 +21,7 @@ let Header = `
         <ul class="flex flex-row justify-between items-center px-5">
             <li class=" text-2xl uppercase py-2 h-10 ">
                 <a href="/src/index.html">
-                    <img loading="eager" class="h-full scale-125  " src="/src/media/images/logo.png" alt="urbanface-logo" />
+                    <img loading="eager" class="h-full scale-125  " src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719827647/URBANFACE/logo_q3jyzh.png" alt="urbanface-logo" />
                 </a>
             </li>
             <li id="menu_toggle_btn" class="font-WorkSans400 text-2xl uppercase py-2">=</li>
@@ -38,7 +38,7 @@ let Header = `
         class=" lg:flex-row backdrop-blur-sm lg:bg-gradient-to-b  lg:from-black/85 fixed w-full z-20 text-white py-5 pl-10 pr-0  justify-between items-baseline hidden lg:flex max-w-[1440px] ">
         <div id="logo-img" class=" font-bold text-3xl h-9 ">
             <a href="/src/index.html">
-                <img loading="eager" class="h-full scale-125 " src="/src/media/images/logo.png" alt="urbanface-logo" />
+                <img loading="eager" class="h-full scale-125 " src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719827647/URBANFACE/logo_q3jyzh.png" alt="urbanface-logo" />
             </a>
         </div>
         <div>

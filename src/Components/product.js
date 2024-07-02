@@ -11,7 +11,7 @@ let Product = (title, desc, img) => `
 
     </div>
     <div id="product-scroll-down" class="w-32 flex flex-col justify-center items-center  ">
-        <img class="w-1/2" src="/src/media/ig/scrolldown.gif" alt="">
+        <img class="w-1/2" src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719851978/URBANFACE/scrolldown_xzqd4p.gif" alt="">
         <p class="w-full text-center font-Raleway text-sm  ">Scroll Down </p>
     </div>
 </div>
@@ -19,12 +19,14 @@ let Product = (title, desc, img) => `
 <div class="racesWrapper overflow-hidden ">
     <div class="races  flex sm:w-fit flex-nowrap h-[40vh] sm:h-[80vh]    ">
 
-        ${img.map(
-        (i) => `
+        ${img
+            .map(
+                (i) => `
         <img class="w-full h-full object-cover sm:object-contain " src=${i} alt="">
 
         `
-        ).join("")}
+            )
+            .join("")}
     </div>
 </div>
 
