@@ -55,4 +55,6 @@ body{
     
   }
   
-  
+  .group:hover .group-hover\:block {
+    display: block;
+  }

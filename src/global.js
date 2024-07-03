@@ -8,7 +8,7 @@ document
 let mob_header = document.querySelector("#mob_header");
 let btn = document.querySelector("#menu_toggle_btn");
 let close_btn = document.getElementById("close_btn");
-mob_header.insertAdjacentHTML("afterbegin", Footer);
+mob_header.insertAdjacentHTML("afterbegin", Footer2);
 close_btn.addEventListener(
     "click",
     () => {
@@ -23,6 +23,16 @@ btn.addEventListener(
     },
     false
 );
+
+// drawer menu suboptions 
+document.querySelectorAll('.footer-menu').forEach((menu) => {
+    menu.addEventListener('click', (e) => {
+        e.preventDefault();
+        const index = menu.getAttribute('data-index');
+        const submenu = document.getElementById(`submenu-${index}`);
+        submenu.classList.toggle('hidden');
+    });
+});
 
 // scroll to top btn
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -53,7 +63,7 @@ tl.from("#logo-img, #menu-item", {
 
 let menuItems = document.querySelectorAll("#menu-item");
 menuItems.forEach((item) => {
-    item.addEventListener("mouseover", () => {
+    item.addEventListener("onclick", () => {
         const hoverElement = item.querySelector(".menu-item-active");
         const el = item.querySelector(".menu-item");
         gsap.to(hoverElement, {

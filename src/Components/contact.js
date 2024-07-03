@@ -47,7 +47,7 @@ let Contact = `
         </div>
     </div>
     <div id="contact-img" class="md:w-1/2 h-[100vh] hidden md:block">
-        <img loading="lazy" src="/src/media/images/contact.jpg" class="h-full w-full object-cover object-bottom "
+        <img loading="lazy" src="http://res.cloudinary.com/dgebxxagb/image/upload/v1719856148/URBANFACE/images/contact_sbpzft.jpg" class="h-full w-full object-cover object-bottom "
             alt="" />
     </div>
 </div>

@@ -22,7 +22,7 @@ let Product = (title, desc, img) => `
         ${img
             .map(
                 (i) => `
-        <img class="w-full h-full object-cover sm:object-contain " src=${i} alt="">
+        <img class="w-full h-full grayscale hover:grayscale-0 hover:scale-110 duration-700 ease-in-out  object-cover sm:object-contain " src=${i} alt="">
 
         `
             )

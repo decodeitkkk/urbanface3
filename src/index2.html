@@ -32,12 +32,12 @@
         </div>
     </section>
     <section id="content" class="h-screen overflow-hidden relative">
-        <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover grayscale lazyload"
-                src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719856148/URBANFACE/images/gif-3_elhapd.gif"
-                alt="background-image">
+        <div id="particles-js" class="absolute inset-0 z-0">
+            <!-- <img class="w-full h-full object-cover grayscale lazyload"
+                src="/src/media/video2.gif"
+                alt="background-image"> -->
         </div>
-        <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        <!-- <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div> -->
         <div class="relative z-20 flex flex-col justify-center py-10 px-4 md:h-screen md:px-12 w-full h-full my-auto">
             <div id="home-content-title" class="uppercase font-LibreBaskervilleRegular text-2xl md:text-6xl">
                 Urbanface
@@ -61,8 +61,9 @@
         </div>
     </section>
     <section id="category">
-        <div class="relative h-screen overflow-hidden md:flex md:flex-row md:justify-between">
-            <div
+        <div  class="relative h-screen overflow-hidden md:flex md:flex-row md:justify-between">
+            <div id="particles-js" class="absolute top-48 left-52" ></div>
+            <div 
                 class="md:relative font-SourceSans3Regular absolute h-full w-full inset-0 flex flex-col justify-end sm:justify-center items-start text-white z-10">
                 <h1 id="architectural"
                     class="text-white/70 hover:text-white text-2xl md:text-4xl md:my-3 md:0 p-4 md:ps-16 cursor-pointer bg-gradient-to-r from-black/50 backdrop-blur md:backdrop-blur-none md:bg-gradient-to-r md:from-transparent">
@@ -88,10 +89,10 @@
     </section>
     <section>
         <div class="panel orangeWrapper">
-            <section id="particles-js" class="panel orange w-full h-screen overflow-hidden relative">
+            <section  class="panel orange w-full h-screen overflow-hidden relative">
                 <div>
                     <video preload="none" autoplay loop muted
-                        class="h-[60%] w-[60%] object-cover absolute inset-0 mx-auto my-auto rounded-3xl overflow-hidden lazyload">
+                        class="h-auto w-fit object-cover absolute inset-0 mx-auto my-auto rounded-3xl overflow-hidden lazyload">
                         <source
                             src="https://res.cloudinary.com/dgebxxagb/video/upload/v1719811143/URBANFACE/banner_video_e4k3br.mp4"
                             type="video/mp4" />
