@@ -3,7 +3,7 @@ let Contact = `
     <div class="pt-8 md:pt-24 md:my-20"></div>
     <div class="px-5 py-10 mb-6 md:w-1/2 md:mt-20">
         <div id="contact-title"
-            class="text-2xl sm:text-3xl md:text-4xl sm:px-14   text-white font-LibreBaskervilleRegular  mb-5 mt-0">
+            class="text-2xl sm:text-3xl md:text-3xl sm:px-14   text-white uppercase font-LibreBaskervilleRegular  mb-5 mt-0">
             We'll call you back, answer your questions, and find solutions for any task.
         </div>
         <div id="contact-desc"

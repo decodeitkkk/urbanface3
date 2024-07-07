@@ -24,13 +24,31 @@ btn.addEventListener(
     false
 );
 
-// drawer menu suboptions 
-document.querySelectorAll('.footer-menu').forEach((menu) => {
-    menu.addEventListener('click', (e) => {
+// scroll to top option
+document.querySelector("#scrollToTop").addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
+
+// Show/hide the button based on scroll position
+document.addEventListener("scroll", () => {
+    const button = document.querySelector("#scrollToTop");
+    if (window.scrollY > window.innerHeight) {
+        button.classList.remove("hidden");
+    } else {
+        button.classList.add("hidden");
+    }
+});
+
+// drawer menu suboptions
+document.querySelectorAll(".footer-menu").forEach((menu) => {
+    menu.addEventListener("click", (e) => {
         e.preventDefault();
-        const index = menu.getAttribute('data-index');
+        const index = menu.getAttribute("data-index");
         const submenu = document.getElementById(`submenu-${index}`);
-        submenu.classList.toggle('hidden');
+        submenu.classList.toggle("hidden");
     });
 });
 

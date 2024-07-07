@@ -29,10 +29,7 @@
 <body>
     <section id="product"></section>
     <section id="whatsapp-floating-icon"></section>
-    <section id="scrollToTopBtn">
-        <button class="fixed right-5 bottom-[30%] text-black hidden w-12  bg-white hover:bg-gray-700 p-3 rounded-full"
-            onclick="scroll_to_top()">↑</button>
-    </section>
+    
 
 
     <script src="/src/Components/Header.js"></script>
@@ -46,22 +43,14 @@
     <script src="/src/Components/product.js"></script>
     <script>
 
-        const scroll_to_top = () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
+        // const scroll_to_top = (e) => {
+        //     window.scrollTo({
+        //         top: 0,
+        //         behavior: 'smooth'
+        //     });
+        // }
 
-        // Show/hide the button based on scroll position
-        document.addEventListener("scroll", () => {
-            const button = document.querySelector("#scrollToTopBtn button");
-            if (window.scrollY > window.innerHeight) {
-                button.classList.remove("hidden");
-            } else {
-                button.classList.add("hidden");
-            }
-        });
+        
         let img = [
             "https://res.cloudinary.com/dgebxxagb/image/upload/v1719823409/URBANFACE/Chandelier/chandelier-02_i4raly.jpg",
             "https://res.cloudinary.com/dgebxxagb/image/upload/v1719823409/URBANFACE/Chandelier/chandelier-02_i4raly.jpg",

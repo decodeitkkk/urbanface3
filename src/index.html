@@ -13,14 +13,18 @@
     <link href="/src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/global.css">
     <title>Urbanface</title>
-
+    <style>
+        body {
+            background-color: #1f1f1f;
+            color: white;
+        }
+    </style>
 </head>
 
-<body style="background-color: #1f1f1f; color: white">
+<body>
     <section id="video">
-        <div class="w-full h-screen overflow-hidden ">
-            <video preload="metadata" autoplay muted loop
-                class="w-full h-full object-cover  backdrop-blur-sm  sm:h-full">
+        <div class="w-full h-screen overflow-hidden">
+            <video preload="metadata" autoplay muted loop class="w-full h-full object-cover backdrop-blur-sm sm:h-full">
                 <source
                     src="https://res.cloudinary.com/dgebxxagb/video/upload/v1719811143/URBANFACE/banner_video_e4k3br.mp4"
                     type="video/mp4" />
@@ -28,10 +32,10 @@
         </div>
     </section>
     <section id="content" class="h-screen overflow-hidden relative">
-        <div class="absolute inset-0 z-0 ">
-            <img class="w-full h-full object-cover grayscale"
-                src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719856148/URBANFACE/images/gif-3_elhapd.gif"
-                alt="background-image">
+        <div id="particles-js" class="absolute inset-0 z-0">
+            <!-- <img class="w-full h-full object-cover grayscale lazyload"
+                src="/src/media/video2.gif"
+                alt="background-image"> -->
         </div>
         <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
         <div class="relative z-20 flex flex-col justify-center py-10 px-4 md:h-screen md:px-12 w-full h-full my-auto">
@@ -50,173 +54,314 @@
                 Face to deliver exceptional quality and transform your spaces with unparalleled expertise and
                 dedication.
             </div>
-            <div id="home-content-btn"
+            <!-- <div id="home-content-btn"
                 class="font-SourceSans3Regular uppercase hover:underline hover:underline-offset-8 text-lg md:text-2xl text-left my-4 hover:text-yellow-500">
                 <a href="/src/pages/about.html">Welcome to UrbanFace</a>
-            </div>
+            </div> -->
         </div>
     </section>
     <section id="category">
         <div class="relative h-screen overflow-hidden md:flex md:flex-row md:justify-between">
-            <!-- Mobile view -->
+            <div class="absolute top-48 left-52"></div>
             <div
-                class="md:relative font-SourceSans3Regular  absolute h-full w-full inset-0 flex flex-col justify-end sm:justify-center  items-start text-white z-10 ">
-                <!-- Headings -->
-                <h1 id="architectural"
-                    class="text-white/70 hover:text-white  text-2xl md:text-4xl md:my-3 md:0 p-4 md:ps-16 cursor-pointer bg-gradient-to-r from-black/50 backdrop-blur  md:backdrop-blur-none md:bg-gradient-to-r md:from-transparent">
-                    Procurement and Sourcing
-                </h1>
-                <h1 id="residential"
-                    class="text-white/70 hover:text-white  text-2xl md:text-4xl md:my-3 md:0 p-4 md:ps-16 cursor-pointer bg-gradient-to-r from-black/50 backdrop-blur md:backdrop-blur-none md:bg-gradient-to-r md:from-transparent">
-                    Client Satisfaction
-                </h1>
-                <h1 id="commercial"
-                    class="text-white/70 hover:text-white  text-2xl md:text-4xl md:my-3 md:0 p-4 md:ps-16 cursor-pointer bg-gradient-to-r from-black/50 backdrop-blur md:backdrop-blur-none md:bg-gradient-to-r md:from-transparent">
-                    Experiential design
-                </h1>
-            </div>
+                class="md:relative font-SourceSans3Regular absolute h-full w-full inset-0 flex flex-col justify-end sm:justify-center items-start text-white z-10 mx-10 ">
 
-            <!-- Video player -->
-            <video id="video2" preload="metadata"
-                class="h-full w-full  object-cover -z-10 rounded-l-3xl overflow-hidden " autoplay loop muted>
-                <source id="cat_video" class=""
-                    src="https://res.cloudinary.com/dgebxxagb/video/upload/v1719811549/URBANFACE/cat_glass_5_uzpsnc.mp4"
+                <p class="my-4 uppercase  font-LibreBaskervilleRegular text-2xl sm:text-3xl md:text-4xl lg:text-4xl text-center sm:text-left ">
+                    Why Urbanface ?
+                </p>
+                <div class="flex flex-wrap justify-center gap-8  mx-auto mt-5 " >
+                    <div class="flex flex-col justify-center  items-center text-center space-y-2 w-44 backdrop-blur-sm rounded-md p-3 bg-gradient-to-t from-black/50  ">
+                        <img class="w-10 text-white" src="/src/media/images/icons-03.png" alt="">
+                        <p>25+ Years of Experience </p>
+                    </div>
+                    <div class="flex flex-col justify-center  items-center text-center space-y-2 w-44 backdrop-blur-sm rounded-md p-3 bg-gradient-to-t from-black/50 ">
+                        <img class="w-10 text-white" src="/src/media/images/icons-08.png" alt="">
+                        <p>Cost Effective </p>
+                    </div>
+                    <div class="flex flex-col justify-center  items-center text-center space-y-2 w-44 backdrop-blur-sm rounded-md p-3 bg-gradient-to-t from-black/50 ">
+                        <img class="w-10 text-white" src="/src/media/images/icons-11.png" alt="">
+                        <p>Global Supplier Network</p>
+                    </div>
+                    <div class="flex flex-col justify-center  items-center text-center space-y-2 w-44 backdrop-blur-sm rounded-md p-3 bg-gradient-to-t from-black/50 ">
+                        <img class="w-10 text-white" src="/src/media/images/icons-10.png" alt="">
+                        <p>Bespoke Customization </p>
+                    </div>
+                    <div class="flex flex-col justify-center  items-center text-center space-y-2 w-44 backdrop-blur-sm rounded-md p-3 bg-gradient-to-t from-black/50 ">
+                        <img class="w-10 text-white" src="/src/media/images/icons-05.png" alt="">
+                        <p>Rigorous Quality Assurance </p>
+                    </div>
+                    <div class="flex flex-col justify-center  items-center text-center space-y-2 w-44 backdrop-blur-sm rounded-md p-3 bg-gradient-to-t from-black/50 ">
+                        <img class="w-10 text-white" src="/src/media/images/icons-06.png" alt="">
+                        <p>Luxurious Look & Feel</p>
+                    </div>
+                </div>
+            </div>
+            <video id="video2" preload="none"
+                class="h-full w-full object-cover -z-10 rounded-l-3xl overflow-hidden lazyload" autoplay loop muted
+                controls>
+                <source id="cat_video"
+                    src="https://res.cloudinary.com/dgebxxagb/video/upload/v1720277736/URBANFACE/images/cat_merged_p7vmnc.mp4"
                     type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-
-            <!-- Desktop view -->
         </div>
     </section>
-
     <section>
-        <div class="panel orangeWrapper ">
-            <section id="particles-js" class="panel orange w-full h-screen overflow-hidden  relative  ">
-                <div class="  ">
-                    <!-- <span class="line line-2"></span> -->
-                    <video preload="metadata" autoplay loop muted
-                        class="h-[60%]  w-[60%] object-cover absolute inset-0  mx-auto my-auto  rounded-3xl overflow-hidden ">
 
-                        <source class=""
+        <div class="flex justify-around items-center space-x-8 py-36 relative my-10 bg-gray-950] ">
+
+            <div id="particles-js2" class="absolute inset-0 z-0"></div>
+
+            <div
+                class="text-center absolute left-[5%] sm:left-[20%] w-40 md:w-52 border border-gray-700 rounded-lg p-5 md:p-10 ">
+                <p class="text-4xl  text-yellow-600">
+                    <span id="yearsCounter" class="counter" data-target="25">0</span> +
+                </p>
+                <p class="text-lg font-SourceSans3Regular uppercase text-white">years of experience</p>
+            </div>
+            <div
+                class="text-center absolute right-[5%] sm:right-[20%] w-40 md:w-52 border border-gray-700 rounded-lg p-5 md:p-10 ">
+                <p class="text-4xl  text-yellow-600">
+                    <span id="projectsCounter" class="counter" data-target="250">0</span> +
+                </p>
+                <p class="text-lg font-SourceSans3Regular uppercase text-white">projects completed</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="panel orangeWrapper">
+            <section class="panel orange w-full h-screen overflow-hidden relative">
+                <div>
+                    <video preload="none" autoplay loop muted
+                        class="h-full w-full object-cover absolute inset-0 mx-auto my-auto  overflow-hidden lazyload">
+                        <source
                             src="https://res.cloudinary.com/dgebxxagb/video/upload/v1719811143/URBANFACE/banner_video_e4k3br.mp4"
                             type="video/mp4" />
                     </video>
-                    <!-- <div class=" bg-black absolute left-24 h-[80%]  w-[80%] object-cover  ">
-                    </div> -->
-
-                    </d>
+                </div>
             </section>
         </div>
     </section>
-
     <section id="contact"></section>
     <section id="whatsapp-floating-icon"></section>
-
     <script defer src="/src/Components/Header.js"></script>
     <script defer src="/src/Components/Footer.js"></script>
     <script defer src="/src/Components/contact.js"></script>
     <script defer src="/src/Components/whatsappFloatingIcon.js"></script>
-
-    <!-- GSAP Animation scripts -->
     <script defer src="/src/media/JS/gsap.min.js"></script>
     <script defer src="/src/media/JS/ScrollTrigger.min.js"></script>
-
-    <!-- particlesjs scripts -->
     <script defer src="/src/particles.js"></script>
-
-
-    <!-- <script defer src="/src/global.js"></script> -->
+    <script src="/src/global.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-
-            // for header and footer to every page
             document.body.insertAdjacentHTML("afterbegin", Header);
             document.body.insertAdjacentHTML("beforeend", Footer);
-            document
-                .getElementById("whatsapp-floating-icon")
-                .insertAdjacentHTML("afterbegin", whatsappIcons);
+
+            document.getElementById("whatsapp-floating-icon").insertAdjacentHTML("afterbegin", whatsappIcons);
 
             let mob_header = document.querySelector("#mob_header");
             let btn = document.querySelector("#menu_toggle_btn");
             let close_btn = document.getElementById("close_btn");
-            mob_header.insertAdjacentHTML("afterbegin", Footer);
-            close_btn.addEventListener(
-                "click",
-                () => {
-                    mob_header.classList.toggle("hidden");
-                },
-                false
-            );
-            btn.addEventListener(
-                "click",
-                () => {
-                    mob_header.classList.toggle("hidden");
-                },
-                false
-            );
+            mob_header.insertAdjacentHTML("afterbegin", Footer2);
+            close_btn.addEventListener("click", () => {
+                mob_header.classList.toggle("hidden");
+            }, false);
+            btn.addEventListener("click", () => {
+                mob_header.classList.toggle("hidden");
+            }, false);
 
+            document.getElementById("contact").insertAdjacentHTML("afterbegin", Contact);
 
-            document
-                .getElementById("contact")
-                .insertAdjacentHTML("afterbegin", Contact);
-            // Initialize GSAP animations after HTML is inserted
+            const counters = document.querySelectorAll('.counter');
+            const options = {
+                threshold: 0.5
+            };
 
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-target'));
 
-            let arch = document.getElementById("architectural");
-            let resd = document.getElementById("residential");
-            let comm = document.getElementById("commercial");
-            let vid = document.getElementById("video2");
+                        gsap.to(entry.target, {
+                            innerHTML: target,
+                            duration: 2,
+                            ease: "power2.inOut",
+                            snap: { innerHTML: 1 },
+                            onUpdate: function () {
+                                entry.target.innerHTML = Math.round(this.targets()[0].innerHTML);
+                            }
+                        });
 
-
-            arch.addEventListener(
-                "mouseover",
-                () => {
-                    vid.src = "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811549/URBANFACE/cat_glass_5_uzpsnc.mp4";
-                    vid.load();
-                },
-                false
-            );
-            resd.addEventListener(
-                "mouseover",
-                () => {
-                    vid.src = "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811550/URBANFACE/cat_outside_2_hhv02i.mp4";
-                    vid.load();
-                },
-                false
-            );
-            comm.addEventListener(
-                "mouseover",
-                () => {
-                    vid.src = "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811547/URBANFACE/cat_steps_2_xq4fxx.mp4";
-                    vid.load();
-                    isSupp = vid.canPlayType("video/mp4");
-                    if (isSupp == "") {
-                        vid.src = "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811547/URBANFACE/cat_steps_2_xq4fxx.mp4";
+                        observer.unobserve(entry.target);
                     }
-                    vid.load();
-                },
-                false
-            );
+                });
+            }, options);
+
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+
+
+
+
+            const videoSources = [
+                "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811549/URBANFACE/cat_glass_5_uzpsnc.mp4",
+                "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811550/URBANFACE/cat_outside_2_hhv02i.mp4",
+                "https://res.cloudinary.com/dgebxxagb/video/upload/v1719811547/URBANFACE/cat_steps_2_xq4fxx.mp4"
+            ];
+
+            // Get the video element
+            const video = document.getElementById("video2");
+            const source = document.getElementById("cat_video");
+
+            // Current video index
+            let currentVideoIndex = 0;
+
+            // Function to play the next video
+            const playNextVideo = () => {
+                currentVideoIndex = (currentVideoIndex + 1) % videoSources.length; // Loop back to first video
+                source.src = videoSources[currentVideoIndex];
+                video.load(); // Load the new video
+                video.play(); // Play the new video
+            };
+
+            // Event listener for when the video ends
+            video.addEventListener("ended", playNextVideo);
+
+            // Initial load
+            video.play();
+
 
             gsap.registerPlugin(ScrollTrigger);
-            const tlO = gsap
-                .timeline({
-                    scrollTrigger: {
-                        trigger: ".orangeWrapper",
-                        scrub: true,
-                        pin: true,
-                        start: "50% 50%",
-                        end: "+=300%",
-                    },
-                })
+            const tlO = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".orangeWrapper",
+                    scrub: true,
+                    pin: true,
+                    start: "50% 50%",
+                    end: "+=300%",
+                },
+            })
             tlO.from(".orange", {
                 scale: 0.5,
                 ease: "none",
-            })
+            });
+
+            // particle JS
             particlesJS("particles-js", {
+                particles: {
+                    number: {
+                        value: 120,
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: "#ffffff"
+                    },
+                    shape: {
+                        type: "circle",
+                        stroke: {
+                            width: 0,
+                            color: "#000000"
+                        },
+                        polygon: {
+                            nb_sides: 5
+                        },
+                        image: {
+                            src: "img/github.svg",
+                            width: 100,
+                            height: 100
+                        }
+                    },
+                    opacity: {
+                        value: 0.5,
+                        random: false,
+                        anim: {
+                            enable: false,
+                            speed: 1,
+                            opacity_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    size: {
+                        value: 3,
+                        random: true,
+                        anim: {
+                            enable: false,
+                            speed: 40,
+                            size_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#ffffff",
+                        opacity: 0.4,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 1,
+                        direction: "none",
+                        random: false,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false,
+                        attract: {
+                            enable: false,
+                            rotateX: 600,
+                            rotateY: 1200
+                        }
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: "repulse"
+                        },
+                        onclick: {
+                            enable: true,
+                            mode: "push"
+                        },
+                        resize: true
+                    },
+                    modes: {
+                        grab: {
+                            distance: 140,
+                            line_linked: {
+                                opacity: 1
+                            }
+                        },
+                        bubble: {
+                            distance: 400,
+                            size: 40,
+                            duration: 2,
+                            opacity: 8,
+                            speed: 3
+                        },
+                        repulse: {
+                            distance: 200,
+                            duration: 0.4
+                        },
+                        push: {
+                            particles_nb: 4
+                        },
+                        remove: {
+                            particles_nb: 2
+                        }
+                    }
+                },
+                retina_detect: true
+            });
+            particlesJS("particles-js2", {
                 "particles": {
                     "number": {
-                        "value": 120,
+                        "value": 300,
                         "density": {
                             "enable": true,
                             "value_area": 800
@@ -227,22 +372,10 @@
                     },
                     "shape": {
                         "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        },
-                        "image": {
-                            "src": "img/github.svg",
-                            "width": 100,
-                            "height": 100
-                        }
                     },
                     "opacity": {
-                        "value": 0.5,
-                        "random": false,
+                        "value": 0.8,
+                        "random": true,
                         "anim": {
                             "enable": false,
                             "speed": 1,
@@ -261,23 +394,19 @@
                         }
                     },
                     "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#ffffff",
-                        "opacity": 0.4,
-                        "width": 1
+                        "enable": false,
                     },
                     "move": {
                         "enable": true,
-                        "speed": 6,
-                        "direction": "none",
-                        "random": false,
+                        "speed": 1,
+                        "direction": "bottom",
+                        "random": true,
                         "straight": false,
                         "out_mode": "out",
                         "bounce": false,
                         "attract": {
-                            "enable": false,
-                            "rotateX": 600,
+                            "enable": true,
+                            "rotateX": 300,
                             "rotateY": 1200
                         }
                     }
@@ -296,28 +425,12 @@
                         "resize": true
                     },
                     "modes": {
-                        "grab": {
-                            "distance": 140,
-                            "line_linked": {
-                                "opacity": 1
-                            }
-                        },
-                        "bubble": {
-                            "distance": 400,
-                            "size": 40,
-                            "duration": 2,
-                            "opacity": 8,
-                            "speed": 3
-                        },
                         "repulse": {
-                            "distance": 200,
+                            "distance": 100,
                             "duration": 0.4
                         },
                         "push": {
                             "particles_nb": 4
-                        },
-                        "remove": {
-                            "particles_nb": 2
                         }
                     }
                 },

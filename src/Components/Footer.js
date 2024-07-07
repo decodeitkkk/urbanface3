@@ -12,65 +12,82 @@ let footerData2 = [
 let footerData3 = [
     {
         menu: "commercials",
-        link: "/src/pages/commercial.html",
+
         submenu: [
-            { menu: "Hospitality", link: "/src/pages/commercial-retail.html" },
+            { menu: "Hospitality", link: "/src/product/hospitality.html" },
             {
                 menu: "Workplace Interior",
-                link: "/src/pages/commercial-office.html",
+                link: "/src/product/workplace-interior.html",
             },
             {
                 menu: "Event and Rental Furniture",
-                link: "/src/pages/commercial-industrial.html",
+                link: "/src/product/event-rental-furniture.html",
             },
             {
                 menu: "Outdoor Furniture",
-                link: "/src/pages/commercial-mixed.html",
+                link: "/src/product/outdoor-furniture.html",
             },
-            { menu: "Games Room", link: "/src/pages/commercial-mixed.html" },
+            { menu: "Games Room", link: "/src/product/games-room.html" },
         ],
     },
     {
         menu: "RESIDENTIAL",
-        link: "/src/pages/residential.html",
+
         submenu: [
             {
                 menu: "Living Room",
-                link: "/src/pages/residential-apartments.html",
+                link: "/src/product/living-room.html",
             },
-            { menu: "Dining Room", link: "/src/pages/residential-houses.html" },
-            { menu: "Kitchen", link: "/src/pages/residential-condos.html" },
-            { menu: "Bedrooms", link: "/src/pages/residential-villas.html" },
-            { menu: "Bathrooms", link: "/src/pages/residential-villas.html" },
+            { menu: "Dining Room", link: "/src/product/dining-room.html" },
+            { menu: "Kitchen", link: "/src/product/kitchen.html" },
+            { menu: "Bedrooms", link: "/src/product/bedroom.html" },
+            { menu: "Bathrooms", link: "/src/proudct/.html" },
             {
                 menu: "Laundary Rooms",
-                link: "/src/pages/residential-villas.html",
+                link: "/src/product/laudary-room.html",
             },
-            { menu: "Drawer", link: "/src/pages/residential-villas.html" },
-            { menu: "Wardrobe", link: "/src/pages/residential-villas.html" },
+            { menu: "Drawer", link: "/src/product/drawer.html" },
+            { menu: "Wardrobe", link: "/src/product/wardrobe.html" },
         ],
     },
     {
         menu: "Interiors",
-        link: "/src/pages/interior.html",
+
         submenu: [
-            { menu: "Living Room", link: "/src/pages/interior-living.html" },
-            { menu: "Bedroom", link: "/src/pages/interior-bedroom.html" },
-            { menu: "Kitchen", link: "/src/pages/interior-kitchen.html" },
-            { menu: "Bathroom", link: "/src/pages/interior-bathroom.html" },
+            { menu: "Coffee table", link: "/src/product/coffee-table.html" },
+            { menu: "Console", link: "/src/product/console.html" },
+            { menu: "Lights", link: "/src/product/light.html" },
+            { menu: "Flooring", link: "/src/product/flooring.html" },
+            { menu: "Carpets", link: "/src/product/carpet.html" },
+            { menu: "Panels", link: "/src/product/panel.html" },
+            { menu: "Faucets", link: "/src/product/faucet.html" },
+            { menu: "Bathroom", link: "/src/product/bathroom.html" },
+            { menu: "Wellness luxe", link: "/src/pages/wellness-lux.html" },
+            { menu: "Chairs", link: "/src/product/chair.html" },
+            { menu: "Accessories", link: "/src/product/accessories.html" },
         ],
     },
     {
         menu: "artifacts",
-        link: "/src/pages/artifacts.html",
+
         submenu: [
+            { menu: "Home decor", link: "/src/product/home-decor.html" },
+            { menu: "Sculpture", link: "/src/product/sculpture.html" },
             {
-                menu: "Sculptures",
-                link: "/src/pages/artifacts-sculptures.html",
+                menu: "Experiential design",
+                link: "/src/product/experiential-art.html",
             },
-            { menu: "Paintings", link: "/src/pages/artifacts-paintings.html" },
-            { menu: "Ceramics", link: "/src/pages/artifacts-ceramics.html" },
-            { menu: "Textiles", link: "/src/pages/artifacts-textiles.html" },
+            { menu: "Artwork", link: "/src/product/artwork.html" },
+        ],
+    },
+    {
+        menu: "About us",
+        link: "/src/pages/about.html",
+        submenu: [
+            { menu: "Why us ?", link: "/src/pages/why.html" },
+            { menu: "Who we are ?", link: "/src/pages/who.html" },
+            { menu: "What we do ?", link: "/src/pages/what.html" },
+            { menu: "How we do ?", link: "/src/pages/how.html" },
         ],
     },
 ];
@@ -207,6 +224,10 @@ let Footer2 = `
                     <div class="w-full">
                         <ul class="list-none uppercase font-FigtreeMedium">
                             ${footerData2
+                                .filter(
+                                    (item) =>
+                                        item.menu !== "About us"
+                                )
                                 .map(
                                     (item) => `
                                 <li>

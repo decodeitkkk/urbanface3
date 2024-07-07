@@ -1,66 +1,71 @@
-let headerData = [
+let headerData =[
     { menu: "|", link: "#" },
+    { menu: "About us", link: "/src/pages/about.html", submenu: [
+        {menu: "Why us ?", link: "/src/pages/why.html"},
+        {menu: "Who we are ?", link: "/src/pages/who.html"},
+        {menu: "What we do ?", link: "/src/pages/what.html"},
+        {menu: "How we do ?", link: "/src/pages/how.html"},
+    ]},
+    { menu: "services", link: "/src/pages/services.html" },
     {
         menu: "Commercial",
         link: "/src/pages/commercial.html",
         submenu: [
-            { menu: "Hospitality", link: "#" },
-            { menu: "Workplace Interior", link: "#" },
-            { menu: "Event and rental furniture", link: "#" },
-            { menu: "Outdoor Furniture", link: "#" },
-            { menu: "Games Room", link: "#" },
+            { menu: "Hospitality", link: "/src/product/hospitality.html" },
+            { menu: "Workplace Interior", link: "/src/product/workplace-interior.html" },
+            { menu: "Event and rental furniture", link: "/src/product/event-rental.html" },
+            { menu: "Outdoor Furniture", link: "/src/product/outdoor-furniture.html" },
+            { menu: "Games Room", link: "/src/product/games-room.html" },
         ],
     },
     {
         menu: "Residential",
         link: "/src/pages/residential.html",
         submenu: [
-            { menu: "Living Room", link: "#" },
-            { menu: "Dining Room", link: "#" },
-            { menu: "Kitchen", link: "#" },
-            { menu: "Bedrooms", link: "#" },
-            { menu: "Bathrooms", link: "#" },
-            { menu: "Laundary Rooms", link: "#" },
-            { menu: "Drawer", link: "#" },
-            { menu: "Wardrobe", link: "#" },
+            { menu: "Living Room", link: "/src/product/living-room.html" },
+            { menu: "Dining Room", link: "/src/product/dining-room.html" },
+            { menu: "Kitchen", link: "/src/product/kitchen.html" },
+            { menu: "Bedrooms", link: "/src/product/bedrooms.html" },
+            { menu: "Bathrooms", link: "/src/product/bathrooms.html" },
+            { menu: "Laundary Rooms", link: "/src/product/laundary-rooms.html" },
+            { menu: "Drawer", link: "/src/product/drawer.html" },
+            { menu: "Wardrobe", link: "/src/product/wardrobe.html" },
         ],
     },
     {
         menu: "Interiors",
         link: "/src/pages/interior.html",
         submenu: [
-            { menu: "Coffee Table", link: "#" },
-            { menu: "Console", link: "#" },
-            { menu: "Lights", link: "#" },
-            { menu: "Flooring", link: "#" },
-            { menu: "Carpets", link: "#" },
-            { menu: "Panels", link: "#" },
-            { menu: "Faucets", link: "#" },
-            { menu: "Bathroom", link: "#" },
-            { menu: "Wellness Luxe", link: "#" },
-            { menu: "Chairs", link: "#" },
-            { menu: "Accessories", link: "#" },
+            { menu: "Coffee Table", link: "/src/product/coffee-table.html" },
+            { menu: "Console", link: "/src/product/console.html" },
+            { menu: "Lights", link: "/src/product/light.html" },
+            { menu: "Flooring", link: "/src/product/flooring.html" },
+            { menu: "Carpets", link: "/src/product/carpet.html" },
+            { menu: "Panels", link: "/src/product/panel.html" },
+            { menu: "Faucets", link: "/src/product/faucet.html" },
+            { menu: "Bathroom", link: "/src/product/bathroom.html" },
+            { menu: "Wellness Luxe", link: "/src/product/pages/wellness-lux.html" },
+            { menu: "Chairs", link: "/src/product/chair.html" },
+            { menu: "Accessories", link: "/src/product/accessories.html" },
         ],
     },
     {
         menu: "Artifacts",
         link: "/src/pages/artifacts.html",
         submenu: [
-            { menu: "Home Decor", link: "#" },
-            { menu: "Sculpture", link: "#" },
-            { menu: "Experiential Designs", link: "#" },
-            { menu: "Artworks", link: "#" },
+            { menu: "Home Decor", link: "/src/product/home-decor.html" },
+            { menu: "Sculpture", link: "/src/product/sculpture.html" },
+            { menu: "Experiential Designs", link: "/src/product/experiential-art.html" },
+            { menu: "Artworks", link: "/src/product/artwork.html" },
         ],
     },
-    { menu: "About us", link: "/src/pages/about.html" },
-    { menu: "services", link: "/src/pages/services.html" },
     { menu: "contact us", link: "/src/pages/contact.html" },
     { menu: "|", link: "#" },
-];
+]
 
 let Header = `
 <header>
-    <div class="backdrop-blur text-white z-30 fixed w-full lg:hidden">
+    <div class="backdrop-blur text-white z-[999] fixed w-full lg:hidden">
         <ul class="flex flex-row justify-between items-center px-5">
             <li class="text-2xl uppercase py-2 h-10">
                 <a href="/src/index.html">

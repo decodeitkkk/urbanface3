@@ -1,5 +1,5 @@
 @tailwind base;
-@tailwind components;
+@tailwind components; 
 @tailwind utilities;
 
 @layer base {
@@ -56,7 +56,7 @@
         font-family: "LibreBaskerville-Regular";
         font-style: normal;
         font-display: swap;
-        src: url(/src/media/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+        src: url(/src/media/fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf);
     }
     @font-face {
         font-family: "LibreBaskerville-Bold";
@@ -68,6 +68,8 @@
         font-family: "SourceSans3-Regular";
         font-style: normal;
         font-display: swap;
-        src: url(/src/media/fonts/SourceSans3-Regular.ttf);
+        src: url(/src/media/fonts/Roboto/Roboto-Light.ttf);
     }
+
+   
 }
