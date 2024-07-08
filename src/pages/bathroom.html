@@ -34,8 +34,8 @@
         </div>
 
         <div id="grid">
-            <div class=" w-full my-5 py-5 px-5 md:mb-10 ">
-                <div class="grid sm:grid-cols-2 row-span-3 md:grid-cols-5 h-[100%] gap-2 px-10 ">
+            <div class=" w-full my-5 py-5  md:mb-10 ">
+                <div class="grid sm:grid-cols-2 row-span-3 md:grid-cols-5 h-[100%] sm:gap-2  ">
                     <div id="grid-image"
                         class="relative cursor-box col-span-1 sm:col-span-2 md:col-span-2 overflow-hidden md:row-span-2 h-full ">
                         <a href="/src/product/bathroom.html">
@@ -116,7 +116,7 @@
                 duration: 0.5,
                 markers: false,
                 y: 100,
-                toggleActions: "play reverse play reverse",
+                
                 scrollTrigger: {
                     trigger: "#title",
                     scroller: "body",
@@ -134,7 +134,7 @@
                     // scrub: true,
                     start: "top 60%",
                     end: "top -50%",
-                    toggleActions: "play reverse play reverse",
+                
                 },
             });
             row1.from("#grid-image, #grid-image-2", {

@@ -26,7 +26,7 @@ let headerData =[
             { menu: "Dining Room", link: "/src/product/dining-room.html" },
             { menu: "Kitchen", link: "/src/product/kitchen.html" },
             { menu: "Bedrooms", link: "/src/product/bedrooms.html" },
-            { menu: "Bathrooms", link: "/src/product/bathrooms.html" },
+            { menu: "Bathrooms", link: "/src/pages/bathroom.html" },
             { menu: "Laundary Rooms", link: "/src/product/laundary-rooms.html" },
             { menu: "Drawer", link: "/src/product/drawer.html" },
             { menu: "Wardrobe", link: "/src/product/wardrobe.html" },
@@ -72,7 +72,9 @@ let Header = `
                     <img loading="eager" class="h-full scale-125" src="https://res.cloudinary.com/dgebxxagb/image/upload/v1719827647/URBANFACE/logo_q3jyzh.png" alt="urbanface-logo" />
                 </a>
             </li>
-            <li id="menu_toggle_btn" class="font-WorkSans400 text-2xl uppercase py-2">=</li>
+            <li id="menu_toggle_btn" class="font-WorkSans400 text-2xl uppercase py-2">
+             <img loading="eager" class=" w-6 " src="/src/media/images/hamburger.png" alt="urbanface-logo" />
+            </li>
         </ul>
     </div>
 

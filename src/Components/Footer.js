@@ -41,7 +41,7 @@ let footerData3 = [
             { menu: "Dining Room", link: "/src/product/dining-room.html" },
             { menu: "Kitchen", link: "/src/product/kitchen.html" },
             { menu: "Bedrooms", link: "/src/product/bedroom.html" },
-            { menu: "Bathrooms", link: "/src/proudct/.html" },
+            { menu: "Bathrooms", link: "/src/pages/bathroom.html" },
             {
                 menu: "Laundary Rooms",
                 link: "/src/product/laudary-room.html",
@@ -56,7 +56,7 @@ let footerData3 = [
         submenu: [
             { menu: "Coffee table", link: "/src/product/coffee-table.html" },
             { menu: "Console", link: "/src/product/console.html" },
-            { menu: "Lights", link: "/src/product/light.html" },
+            { menu: "Lights", link: "/src/pages/lights.html" },
             { menu: "Flooring", link: "/src/product/flooring.html" },
             { menu: "Carpets", link: "/src/product/carpet.html" },
             { menu: "Panels", link: "/src/product/panel.html" },
